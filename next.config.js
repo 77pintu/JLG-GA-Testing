@@ -16,6 +16,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.lynda.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'plus.unsplash.com',
+      },
     ],
   },
   output: "standalone",
