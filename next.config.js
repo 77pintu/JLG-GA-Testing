@@ -14,11 +14,7 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'cdn.lynda.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.pexels.com',
-      },
+      }
     ],
   },
   output: "standalone",
