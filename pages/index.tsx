@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -15,8 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
+      <main>
+        <div>
           <p>
             JLG UNIVERSITY
           </p>
@@ -25,7 +24,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center}>
+        <div>
           <Image
             src="https://cpcontents.adobe.com/public/account/119202/thumbnails/learningplans/114514/2023-08-01%2012:42:13.135jlgu_classroom_MG_7771_8be1e45514944e138390e86540c7ab76.png"
             alt="Next.js Logo"
