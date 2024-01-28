@@ -10,7 +10,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'cpcontents.adobe.com',
+        hostname: 'cpcontents.adobe.com%25',
       },
       {
         protocol: 'https',
