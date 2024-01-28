@@ -21,7 +21,7 @@ export default function Home() {
             JLG UNIVERSITY
           </p>
           <div>
-            <h1>Testing</h1>
+            <h1>Test</h1>
           </div>
         </div>
 
