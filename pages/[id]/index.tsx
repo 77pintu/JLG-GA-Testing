@@ -5,7 +5,7 @@ import React from 'react'
 export default function CourseDetails() {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <h4>JLG Course details</h4>
+            <h4>JLG Course detail</h4>
 
             <Image
                 src="https://images.pexels.com/photos/19748403/pexels-photo-19748403/free-photo-of-a-red-and-white-striped-tent-in-front-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
