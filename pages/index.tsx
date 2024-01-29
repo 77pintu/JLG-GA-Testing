@@ -1,26 +1,26 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { GoogleTagManager, sendGTMEvent } from '@next/third-parties/google'
+// import { GoogleTagManager, sendGTMEvent } from '@next/third-parties/google'
 import { useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
   const viewDetails = () => {
-    sendGTMEvent({
-      event: 'view_item',
-      currency: "USD",
-      value: "1",
-      items: [
-        {
-          item_id: "1",
-          item_name: "courseName",
-          item_category: "loType",
-          price: "2",
-          quantity: "1"
-        }
-      ]
-    }
-    )
+    // sendGTMEvent({
+    //   event: 'view_item',
+    //   currency: "USD",
+    //   value: "1",
+    //   items: [
+    //     {
+    //       item_id: "1",
+    //       item_name: "courseName",
+    //       item_category: "loType",
+    //       price: "2",
+    //       quantity: "1"
+    //     }
+    //   ]
+    // }
+    // )
     router.push('/id')
 
   }
@@ -33,7 +33,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <GoogleTagManager gtmId="GTM-MK3PVXGP" />
+        {/* <GoogleTagManager gtmId="GTM-MK3PVXGP" /> */}
         <div>
           <p>
             JLG UNIVERSITY
