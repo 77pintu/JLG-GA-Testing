@@ -39,8 +39,7 @@ const nextConfig = {
         hostname: 'stjlgprodstaticwebapp.blob.core.windows.net',
       },
     ],
-  },
-  i18n,
+  }
 }
 
 module.exports = nextConfig
