@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { GoogleTagManager } from '@next/third-parties/google'
-import { sendGTMEvent } from '@next/third-parties/google'
+import { GoogleTagManager, sendGTMEvent } from '@next/third-parties/google'
 import { useRouter } from 'next/router'
 
 export default function Home() {
