@@ -2,12 +2,9 @@
   "name": "jlg-headless",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "18.19.0"
-  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm -rf ./.next/cache",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,7 +14,7 @@
     "@types/react-dom": "18.2.18",
     "eslint": "8.56.0",
     "eslint-config-next": "14.1.0",
-    "next": "^13.4.4",
+    "next": "14.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.3.3"

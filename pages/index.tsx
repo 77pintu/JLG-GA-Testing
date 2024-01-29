@@ -1,29 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import { GoogleTagManager, sendGTMEvent } from '@next/third-parties/google'
-import { useRouter } from 'next/router'
+import { Inter } from 'next/font/google'
+import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const router = useRouter()
-  const viewDetails = () => {
-    // sendGTMEvent({
-    //   event: 'view_item',
-    //   currency: "USD",
-    //   value: "1",
-    //   items: [
-    //     {
-    //       item_id: "1",
-    //       item_name: "courseName",
-    //       item_category: "loType",
-    //       price: "2",
-    //       quantity: "1"
-    //     }
-    //   ]
-    // }
-    // )
-    router.push('/id')
-
-  }
   return (
     <>
       <Head>
@@ -32,18 +15,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        {/* <GoogleTagManager gtmId="GTM-MK3PVXGP" /> */}
-        <div>
+      <main className={`${styles.main} ${inter.className}`}>
+        <div className={styles.description}>
           <p>
             JLG UNIVERSITY
           </p>
           <div>
-            <h1>Home page</h1>
+            <h1>Testing</h1>
           </div>
         </div>
 
-        <div>
+        <div className={styles.center}>
           <Image
             src="https://cpcontents.adobe.com/public/account/119202/thumbnails/learningplans/114514/2023-08-01%2012:42:13.135jlgu_classroom_MG_7771_8be1e45514944e138390e86540c7ab76.png"
             alt="Next.js Logo"
@@ -59,7 +41,7 @@ export default function Home() {
           /><br />
 
         </div>
-        <button id="view-course-details" onClick={viewDetails} style={{ padding: '10px 20px', border: '1px solid orange' }}>View details</button>
+        <Link href={'/id'} style={{ padding: '10px 20px', border: '1px solid orange' }}>View details</Link>
       </main>
     </>
   )
