@@ -8,7 +8,7 @@ export default function CourseDetails() {
             iframeElement.width = '100%';
             iframeElement.height = '100%';
             // Append the iframe element to the body
-            document.body.appendChild(iframeElement);
+            document.body.appendChild(iframeElement)
         } catch (error) {
             console.log(error)
         }
