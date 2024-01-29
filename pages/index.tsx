@@ -1,11 +1,30 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
-import Link from 'next/link'
-
-
+import { GoogleTagManager } from '@next/third-parties/google'
+import { sendGTMEvent } from '@next/third-parties/google'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter()
+  const viewDetails = () => {
+    sendGTMEvent({
+      event: 'view_item',
+      currency: "USD",
+      value: "1",
+      items: [
+        {
+          item_id: "1",
+          item_name: "courseName",
+          item_category: "loType",
+          price: "2",
+          quantity: "1"
+        }
+      ]
+    }
+    )
+    router.push('/id')
+
+  }
   return (
     <>
       <Head>
@@ -15,6 +34,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <GoogleTagManager gtmId="GTM-MK3PVXGP" />
         <div>
           <p>
             JLG UNIVERSITY
@@ -40,7 +60,7 @@ export default function Home() {
           /><br />
 
         </div>
-        <Link href={'/id'} style={{ padding: '10px 20px', border: '1px solid orange' }}>View details</Link>
+        <button id="view-course-details" onClick={viewDetails} style={{ padding: '10px 20px', border: '1px solid orange' }}>View details</button>
       </main>
     </>
   )
