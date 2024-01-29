@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    unoptimized:true,
     remotePatterns: [
        {
         protocol: 'https',
@@ -14,9 +15,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'cdn.lynda.com',
-      },
+      }
     ],
   },
+  output: "standalone",
 }
 
 module.exports = nextConfig

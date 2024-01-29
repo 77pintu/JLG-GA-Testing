@@ -2,11 +2,16 @@
   "name": "jlg-headless",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.19.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "@types/node": "20.11.8",
