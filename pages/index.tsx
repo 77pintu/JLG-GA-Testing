@@ -3,10 +3,26 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { GoogleTagManager, sendGTMEvent, GoogleAnalytics } from '@next/third-parties/google'
+import { useRouter } from 'next/router'
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
+  const router = useRouter()
   const viewDetails = () => {
-    sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })
+    sendGTMEvent({
+      event: 'view_item',
+      currency: "USD",
+      value: 100,
+      items: [
+        {
+          item_id: 1,
+          item_name: "JLG",
+          item_category: "Course",
+          price: 100,
+          quantity: 1
+        }
+      ]
+    })
+    router.push('/id')
   }
   return (
     <>
