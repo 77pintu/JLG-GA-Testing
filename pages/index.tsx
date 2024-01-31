@@ -60,7 +60,7 @@ export default function Home() {
           /><br />
 
         </div>
-        <button onClick={viewDetails} style={{ padding: '10px 20px', border: '1px solid orange' }}>View details</button>
+        <button id='view-item' onClick={viewDetails} style={{ padding: '10px 20px', border: '1px solid orange' }}>View details</button>
       </main>
     </>
   )
