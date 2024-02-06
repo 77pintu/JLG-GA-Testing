@@ -33,8 +33,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <GoogleTagManager gtmId="GTM-MK3PVXGP" />
-        <GoogleAnalytics gaId="G-TQJT5VB0DP" />
+        <GoogleTagManager gtmId="GTM-NNMQPNTR" />
+        <GoogleAnalytics gaId="G-38T0E169M7" />
         <div className={styles.description}>
           <p>
             JLG UNIVERSITY
